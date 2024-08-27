@@ -1,0 +1,291 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYUNGWE Forest Image Gallery</title>
+  <meta name="description" content="Image gallery with View Transitions API & Scroll-Driven Animation" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+  <body>
+    <header>
+      <h1>Showcase</h1>
+    </header>
+    <main>
+      <section>
+        <div class="imageGallery">
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/g1.jpg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/g2.jpg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/G4.jpg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/G5.jpg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/chimpanze.jpg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/nyungwe 1.jpg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/nyungwe 2.jpg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/nyungwe 3.jpg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/G6.jpg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/L1.jpg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/R1.jpg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+          <button>
+            <picture>
+              <img
+                width="309"
+                height="309"
+                src="images/C1.jpeg"
+                alt="A cute cat"
+                loading="lazy"
+              />
+            </picture>
+          </button>
+        </div>
+
+        <dialog class="dialog" id="dialog">
+          <div class="dialogContainer">
+            <div class="carousel" id="carousel">
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/g1.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/g2.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/F1.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/G4.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/G5.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/chimpanze.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/nyungwe 1.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/nyungwe 2.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/nyungwe 3.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/G6.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/L1.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <img
+                  width="309"
+                  height="309"
+                  src="images/R1.jpg"
+                  alt="A cute cat"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="controls">
+              <button
+                class="controls-btn preview"
+                onclick="carousel.scrollBy(-100, 0)"
+              >
+                <i class="ri-arrow-left-circle-fill"></i>
+              </button>
+              <button
+                class="controls-btn next"
+                onclick="carousel.scrollBy(100, 0)"
+              >
+                <i class="ri-arrow-right-circle-fill"></i>
+              </button>
+            </div>
+            <button id="closeDialogBtn" class="closeDialog">
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+        </dialog>
+      </section>
+    </main>
+
+    <footer>
+      <small>Built Using Picture by <a href="https://www.insidenyungwenationalpark.com/">insidenyungwenationalpark</a></small>
+    </footer>
+  </body>
